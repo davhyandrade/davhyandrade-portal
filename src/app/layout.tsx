@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.className} ${cookie.variable}`}>
+      <body className={`${openSans.className} ${cookie.variable}`} suppressHydrationWarning>
         <Providers>{children}</Providers>
       </body>
     </html>
