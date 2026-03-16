@@ -5,6 +5,7 @@ import typography from "./typography/typography.config";
 
 import { MuiLink } from "./components/link/link.config";
 import { MuiTypography } from "./components/typography/typography.config";
+import { MuiButton } from "./components/button/button.config";
 
 const theme = createTheme({
   spacing: 4,
@@ -13,6 +14,7 @@ const theme = createTheme({
   components: {
     MuiLink,
     MuiTypography,
+    MuiButton,
   },
 });
 
