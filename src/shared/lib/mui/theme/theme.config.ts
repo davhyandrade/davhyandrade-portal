@@ -9,6 +9,7 @@ import { MuiTypography } from "./components/typography/typography.config";
 import { MuiButton } from "./components/button/button.config";
 
 const theme = createTheme({
+  cssVariables: true,
   spacing: 4,
   breakpoints,
   typography,
