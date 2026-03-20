@@ -1,4 +1,5 @@
-import { IconButton, Link, Stack, Typography } from "@mui/material";
+import Link from "@/shared/lib/mui/components/link";
+import { IconButton, Stack, Typography } from "@mui/material";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
