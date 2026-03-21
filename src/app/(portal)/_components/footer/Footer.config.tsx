@@ -15,6 +15,6 @@ export const items = [
   },
   {
     label: "Tela Inicial",
-    href: "/",
+    href: "/#",
   },
 ];
