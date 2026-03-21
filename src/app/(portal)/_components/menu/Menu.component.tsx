@@ -3,22 +3,27 @@
 import Image from "next/image";
 
 import { AppBar, Container, Stack, Typography } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import NavbarMenu from "./navbar-menu/NavbarMenu.component";
+import MenuMobile from "./menu-mobile/MenuMobile.component";
 
 function MenuComponent() {
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
+  const logoSize = isMobile ? 40 : 54;
+
   return (
     <AppBar color="transparent" elevation={0} position="static">
       <Stack
         width="100%"
         alignItems="center"
         justifyContent="center"
-        paddingX={12}
+        paddingX={{ xs: 4, sm: 6, md: 12 }}
       >
         <Container
           maxWidth="xl"
           sx={{
-            paddingX: 0,
+            paddingX: { xs: 0 },
           }}
         >
           <Stack
@@ -27,9 +32,13 @@ function MenuComponent() {
             justifyContent="space-between"
             alignItems="center"
             width="100%"
-            paddingY={14}
+            paddingY={{ xs: 6, sm: 14 }}
           >
-            <Stack direction="row" spacing={6} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={{ xs: 2, sm: 6 }}
+              alignItems="center"
+            >
               <Stack
                 bgcolor="background.paper"
                 borderRadius="50%"
@@ -40,13 +49,13 @@ function MenuComponent() {
                 <Image
                   src="/images/logo.svg"
                   alt="Logotipo"
-                  width={54}
-                  height={54}
+                  width={logoSize}
+                  height={logoSize}
                 />
               </Stack>
 
               <Typography
-                variant="h5"
+                variant={isMobile ? "h6" : "h5"}
                 color="text.primary"
                 fontFamily="var(--font-cookie)"
                 lineHeight={1}
@@ -56,7 +65,7 @@ function MenuComponent() {
               </Typography>
             </Stack>
 
-            <NavbarMenu />
+            {isMobile ? <MenuMobile /> : <NavbarMenu />}
           </Stack>
         </Container>
       </Stack>
