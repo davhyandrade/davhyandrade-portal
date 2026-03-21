@@ -33,7 +33,7 @@ function Loading() {
           },
         }}
       >
-        <Typography variant="body2" color="inherit">
+        <Typography variant="body1" color="inherit">
           Carregando
         </Typography>
 
