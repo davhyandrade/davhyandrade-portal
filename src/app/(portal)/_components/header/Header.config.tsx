@@ -6,7 +6,7 @@ import {
   LINKEDIN_PROFILE_URL,
 } from "@/shared/constants/links.constants";
 
-import type { MenuItem } from "./navbar-menu/NavbarMenu.types";
+import type { MenuItem } from "./Header.types";
 
 export const menuItems: MenuItem[] = [
   { label: "Projetos", href: "/#projects" },
