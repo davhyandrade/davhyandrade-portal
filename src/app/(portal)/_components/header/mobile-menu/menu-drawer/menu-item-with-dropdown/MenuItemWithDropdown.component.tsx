@@ -8,7 +8,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "@/shared/lib/mui/components/link";
 
-import { MenuItemWithDropdownProps } from "./MenuItemWithDropdown.types";
+import type { MenuItemWithDropdownProps } from "./MenuItemWithDropdown.types";
 
 function MenuItemWithDropdown({ item, onClose }: MenuItemWithDropdownProps) {
   return (

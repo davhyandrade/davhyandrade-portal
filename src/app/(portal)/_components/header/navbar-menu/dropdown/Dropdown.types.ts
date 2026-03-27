@@ -1,4 +1,4 @@
-import type { DropdownItem } from "../../Header.types";
+import type { DropdownItem } from "@/app/(portal)/_components/header/Header.types";
 
 export interface DropdownProps {
   anchorEl: null | HTMLElement;

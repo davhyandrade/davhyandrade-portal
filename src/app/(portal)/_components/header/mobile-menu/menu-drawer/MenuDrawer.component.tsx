@@ -3,7 +3,7 @@ import { Drawer, IconButton, Stack } from "@mui/material";
 
 import MenuItemWithDropdown from "./menu-item-with-dropdown/MenuItemWithDropdown.component";
 
-import { menuItems } from "../../Header.config";
+import { menuItems } from "@/app/(portal)/_components/header/Header.config";
 import { StyledLink } from "./MenuDrawer.styles";
 import type { MenuDrawerProps } from "./MenuDrawer.types";
 
