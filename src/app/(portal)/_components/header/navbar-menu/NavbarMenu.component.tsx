@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button, Stack } from "@mui/material";
 
 import Dropdown from "./dropdown/Dropdown.component";
-import { menuItems } from "../Menu.config";
+import { menuItems } from "@/app/(portal)/_components/header/Header.config";
 
 function NavbarMenu() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);

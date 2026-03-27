@@ -5,10 +5,10 @@ import Image from "next/image";
 import { AppBar, Container, Stack, Typography } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
+import MenuMobile from "./mobile-menu/MobileMenu.component";
 import NavbarMenu from "./navbar-menu/NavbarMenu.component";
-import MenuMobile from "./menu-mobile/MenuMobile.component";
 
-function MenuComponent() {
+function Header() {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
   const logoSize = isMobile ? 40 : 54;
 
@@ -73,4 +73,4 @@ function MenuComponent() {
   );
 }
 
-export default MenuComponent;
+export default Header;

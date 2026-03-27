@@ -3,7 +3,7 @@ import { Drawer, IconButton, Stack } from "@mui/material";
 
 import MenuItemWithDropdown from "./menu-item-with-dropdown/MenuItemWithDropdown.component";
 
-import { menuItems } from "../../Menu.config";
+import { menuItems } from "../../Header.config";
 import { StyledLink } from "./MenuDrawer.styles";
 import type { MenuDrawerProps } from "./MenuDrawer.types";
 
@@ -51,7 +51,7 @@ function MenuDrawer({ open, onClose }: MenuDrawerProps) {
                     onClose={onClose}
                   />
                 ) : (
-                  <StyledLink href={item.href} color="text" onClick={onClose}>
+                  <StyledLink href={item.href} onClick={onClose}>
                     {item.label}
                   </StyledLink>
                 )}

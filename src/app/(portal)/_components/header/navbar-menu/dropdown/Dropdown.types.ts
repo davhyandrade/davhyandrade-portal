@@ -1,4 +1,4 @@
-import { DropdownItem } from "../NavbarMenu.types";
+import type { DropdownItem } from "../../Header.types";
 
 export interface DropdownProps {
   anchorEl: null | HTMLElement;
