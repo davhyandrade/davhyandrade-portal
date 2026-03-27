@@ -22,16 +22,21 @@ export const metadata: Metadata = {
     "Portfólio de Davhy Andrade, desenvolvedor web especializado em aplicações modernas com React e Next.js. Projetos autorais, design digital e fotografia.",
 };
 
-export default function RootLayout({
+function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.className} ${cookie.variable}`} suppressHydrationWarning>
+      <body
+        className={`${openSans.className} ${cookie.variable}`}
+        suppressHydrationWarning
+      >
         <Providers>{children}</Providers>
       </body>
     </html>
   );
 }
+
+export default RootLayout;
