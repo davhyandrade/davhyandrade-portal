@@ -1,6 +1,6 @@
-# Davhy Andrade - Portfólio
+# Davhy Andrade - Portal
 
-Este é o repositório do meu portfólio pessoal, onde apresento meus projetos, trabalhos de design digital e fotografias. Sou um desenvolvedor web especializado na criação de aplicações modernas com React e Next.js.
+Este é o repositório do meu portal pessoal, onde apresento meus projetos, trabalhos de design digital e fotografias. Sou um desenvolvedor web especializado na criação de aplicações com React e Next.js.
 
 ## Começando
 
