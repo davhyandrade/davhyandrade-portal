@@ -1,11 +1,11 @@
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import { Drawer, IconButton, Stack } from "@mui/material";
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import { Drawer, IconButton, Stack } from '@mui/material';
 
-import MenuItemWithDropdown from "./menu-item-with-dropdown/MenuItemWithDropdown.component";
+import MenuItemWithDropdown from './menu-item-with-dropdown/MenuItemWithDropdown.component';
 
-import { menuItems } from "@/app/(portal)/_components/header/Header.config";
-import { StyledLink } from "./MenuDrawer.styles";
-import type { MenuDrawerProps } from "./MenuDrawer.types";
+import { menuItems } from '@/app/(portal)/_components/header/Header.config';
+import { StyledLink } from './MenuDrawer.styles';
+import type { MenuDrawerProps } from './MenuDrawer.types';
 
 function MenuDrawer({ open, onClose }: MenuDrawerProps) {
   return (
@@ -16,9 +16,9 @@ function MenuDrawer({ open, onClose }: MenuDrawerProps) {
       slotProps={{
         paper: {
           sx: {
-            bgcolor: "background.default",
+            bgcolor: 'background.default',
             borderBottom: 1,
-            borderColor: "divider",
+            borderColor: 'divider',
           },
         },
       }}
@@ -31,7 +31,7 @@ function MenuDrawer({ open, onClose }: MenuDrawerProps) {
         </Stack>
 
         <Stack component="nav" paddingY={6} spacing={1}>
-          {menuItems.map((item) => {
+          {menuItems.map(item => {
             const hasDropdown = Array.isArray(item.dropdownItems);
 
             return (

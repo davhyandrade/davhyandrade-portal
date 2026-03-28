@@ -4,11 +4,11 @@ import {
   AccordionSummary,
   Stack,
   Typography,
-} from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Link from "@/shared/lib/mui/components/link";
+} from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Link from '@/shared/lib/mui/components/link';
 
-import type { MenuItemWithDropdownProps } from "./MenuItemWithDropdown.types";
+import type { MenuItemWithDropdownProps } from './MenuItemWithDropdown.types';
 
 function MenuItemWithDropdown({ item, onClose }: MenuItemWithDropdownProps) {
   return (
@@ -16,8 +16,8 @@ function MenuItemWithDropdown({ item, onClose }: MenuItemWithDropdownProps) {
       disableGutters
       elevation={0}
       sx={{
-        width: "100%",
-        bgcolor: "transparent",
+        width: '100%',
+        bgcolor: 'transparent',
       }}
     >
       <AccordionSummary
@@ -25,8 +25,8 @@ function MenuItemWithDropdown({ item, onClose }: MenuItemWithDropdownProps) {
         sx={{
           paddingX: 5,
           paddingY: 2,
-          minHeight: "auto",
-          "& .MuiAccordionSummary-content": {
+          minHeight: 'auto',
+          '& .MuiAccordionSummary-content': {
             margin: 0,
             flexGrow: 0,
           },
@@ -38,12 +38,12 @@ function MenuItemWithDropdown({ item, onClose }: MenuItemWithDropdownProps) {
       <AccordionDetails
         sx={{
           padding: 0,
-          bgcolor: "background.paper",
+          bgcolor: 'background.paper',
           borderRadius: 1,
         }}
       >
         <Stack paddingY={2}>
-          {item.dropdownItems.map((subItem) => (
+          {item.dropdownItems.map(subItem => (
             <Link
               key={subItem.label}
               href={subItem.href}

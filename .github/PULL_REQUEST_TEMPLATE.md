@@ -23,9 +23,9 @@ a parte visual, é interessante preencher essa seção.
 
 ## Como isso foi testado?
 
-<!-- 
+<!--
 - Testes Manuais
-- Testes Unitários 
+- Testes Unitários
 -->
 
 ## Informações adicionais

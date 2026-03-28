@@ -1,6 +1,6 @@
-import { defineConfig, globalIgnores } from "eslint/config";
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTs from "eslint-config-next/typescript";
+import { defineConfig, globalIgnores } from 'eslint/config';
+import nextVitals from 'eslint-config-next/core-web-vitals';
+import nextTs from 'eslint-config-next/typescript';
 import prettier from 'eslint-config-prettier';
 import prettierPlugin from 'eslint-plugin-prettier';
 
@@ -21,57 +21,57 @@ const eslintConfig = defineConfig([
   {
     rules: {
       camelcase: [
-        "error",
+        'error',
         {
           ignoreImports: true,
         },
       ],
-      "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
-      "@typescript-eslint/consistent-type-imports": [
-        "error",
+      'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
         {
-          prefer: "type-imports",
+          prefer: 'type-imports',
         },
       ],
-      "no-restricted-imports": [
-        "error",
+      'no-restricted-imports': [
+        'error',
         {
-          patterns: ["../*"],
+          patterns: ['../*'],
         },
       ],
-      "react/function-component-definition": [
-        "error",
+      'react/function-component-definition': [
+        'error',
         {
-          namedComponents: "function-declaration",
-          unnamedComponents: "arrow-function",
+          namedComponents: 'function-declaration',
+          unnamedComponents: 'arrow-function',
         },
       ],
-      "no-restricted-syntax": [
-        "error",
+      'no-restricted-syntax': [
+        'error',
         {
-          selector: "ExportDefaultDeclaration > FunctionDeclaration",
+          selector: 'ExportDefaultDeclaration > FunctionDeclaration',
           message:
-            "Do not export functions directly in the default. Separate the declaration.",
+            'Do not export functions directly in the default. Separate the declaration.',
         },
       ],
-      "@typescript-eslint/no-unused-vars": [
-        "error",
+      '@typescript-eslint/no-unused-vars': [
+        'error',
         {
-          args: "all",
-          argsIgnorePattern: "^_",
+          args: 'all',
+          argsIgnorePattern: '^_',
         },
       ],
-      "func-style": ["error", "declaration", { allowArrowFunctions: true }],
+      'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
     },
   },
   prettierConfig,
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
-    ".next/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
+    '.next/**',
+    'out/**',
+    'build/**',
+    'next-env.d.ts',
   ]),
 ]);
 

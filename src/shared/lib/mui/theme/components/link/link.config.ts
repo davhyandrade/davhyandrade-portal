@@ -1,25 +1,25 @@
-import type { Components, Theme } from "@mui/material/styles";
+import type { Components, Theme } from '@mui/material/styles';
 
-export const MuiLink: Components<Theme>["MuiLink"] = {
+export const MuiLink: Components<Theme>['MuiLink'] = {
   defaultProps: {
-    underline: "none",
+    underline: 'none',
   },
   styleOverrides: {
     root: {
-      transition: "color 0.3s",
+      transition: 'color 0.3s',
     },
   },
   variants: [
     {
-      props: { color: "textSecondary" },
+      props: { color: 'textSecondary' },
       style: ({ theme }) => ({
         color: theme.palette.text.secondary,
 
-        "&:hover, &:focus": {
+        '&:hover, &:focus': {
           color: theme.palette.text.primary,
         },
 
-        "&:active": {
+        '&:active': {
           color: theme.palette.text.disabled,
         },
       }),

@@ -7,12 +7,14 @@ Este é o repositório do meu portfólio pessoal, onde apresento meus projetos, 
 Para executar este projeto localmente, siga os passos abaixo:
 
 1. **Clone o repositório:**
+
    ```bash
    git clone https://github.com/davhyandrade/davhyandrade-portal.git
    cd davhyandrade-portal
    ```
 
 2. **Instale as dependências:**
+
    ```bash
    npm install
    # ou

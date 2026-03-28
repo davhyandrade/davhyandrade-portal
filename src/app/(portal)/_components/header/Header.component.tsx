@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
 
-import { AppBar, Container, Stack, Typography } from "@mui/material";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { AppBar, Container, Stack, Typography } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-import MenuMobile from "./mobile-menu/MobileMenu.component";
-import NavbarMenu from "./navbar-menu/NavbarMenu.component";
+import MenuMobile from './mobile-menu/MobileMenu.component';
+import NavbarMenu from './navbar-menu/NavbarMenu.component';
 
 function Header() {
-  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme => theme.breakpoints.down('md'));
   const logoSize = isMobile ? 40 : 54;
 
   return (
@@ -55,7 +55,7 @@ function Header() {
               </Stack>
 
               <Typography
-                variant={isMobile ? "h6" : "h5"}
+                variant={isMobile ? 'h6' : 'h5'}
                 color="text.primary"
                 fontFamily="var(--font-cookie)"
                 lineHeight={1}
