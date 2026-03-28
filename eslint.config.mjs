@@ -33,12 +33,6 @@ const eslintConfig = defineConfig([
           prefer: 'type-imports',
         },
       ],
-      'no-restricted-imports': [
-        'error',
-        {
-          patterns: ['../*'],
-        },
-      ],
       'react/function-component-definition': [
         'error',
         {
@@ -62,6 +56,28 @@ const eslintConfig = defineConfig([
         },
       ],
       'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
+    },
+  },
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: ['../*'],
+        },
+      ],
+    },
+  },
+  {
+    files: ['**/*.test.*'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: ['../../*'],
+        },
+      ],
     },
   },
   prettierConfig,
