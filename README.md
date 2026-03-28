@@ -38,3 +38,7 @@ Acesse [http://localhost:8000](http://localhost:8000) em seu navegador para ver 
 
 - Node.js >= 20
 - npm >= 9 (ou um gerenciador de pacotes compatível como Yarn ou PNPM)
+
+# Seções extras
+
+- [Formatação de código](./docs/code-formatting.md).
