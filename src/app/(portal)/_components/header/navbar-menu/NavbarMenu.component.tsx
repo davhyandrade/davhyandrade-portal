@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Button, Stack } from "@mui/material";
+import { Button, Stack } from '@mui/material';
 
-import Dropdown from "./dropdown/Dropdown.component";
-import { menuItems } from "@/app/(portal)/_components/header/Header.config";
+import Dropdown from './dropdown/Dropdown.component';
+import { menuItems } from '@/app/(portal)/_components/header/Header.config';
 
 function NavbarMenu() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -24,24 +24,24 @@ function NavbarMenu() {
 
   return (
     <Stack component="nav" direction="row" spacing={4}>
-      {menuItems.map((item) => {
+      {menuItems.map(item => {
         const isOpen = !!anchorEl && activeItem === item.label;
 
         return (
           <Stack direction="row" key={item.label}>
             <Button
-              variant={item.variant || "text"}
+              variant={item.variant || 'text'}
               startIcon={item.icon}
               href={item.href}
               color="info"
-              onClick={(event) =>
+              onClick={event =>
                 item.dropdownItems && handleClick(event, item.label)
               }
               sx={{
                 ...(isOpen && {
                   border: 2,
-                  borderColor: "background.paper",
-                  color: "info.dark",
+                  borderColor: 'background.paper',
+                  color: 'info.dark',
                 }),
               }}
             >

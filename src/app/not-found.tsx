@@ -1,4 +1,4 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography } from '@mui/material';
 
 function NotFoundPage() {
   return (

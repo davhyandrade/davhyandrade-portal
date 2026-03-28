@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { Menu, MenuItem } from "@mui/material";
+import { Menu, MenuItem } from '@mui/material';
 
-import type { DropdownProps } from "./Dropdown.types";
+import type { DropdownProps } from './Dropdown.types';
 
 function Dropdown({ anchorEl, isOpen, onClose, items }: DropdownProps) {
   return (
@@ -16,7 +16,7 @@ function Dropdown({ anchorEl, isOpen, onClose, items }: DropdownProps) {
             marginTop: 3,
             minWidth: 200,
             border: 1,
-            borderColor: "divider",
+            borderColor: 'divider',
             borderRadius: 4,
           },
         },
@@ -28,7 +28,7 @@ function Dropdown({ anchorEl, isOpen, onClose, items }: DropdownProps) {
         },
       }}
     >
-      {items.map((item) => (
+      {items.map(item => (
         <MenuItem
           key={item.label}
           component={Link}
@@ -36,14 +36,14 @@ function Dropdown({ anchorEl, isOpen, onClose, items }: DropdownProps) {
           href={item.href}
           dense
           sx={{
-            bgcolor: "background.default",
+            bgcolor: 'background.default',
             paddingY: 2,
             borderTop: 1,
-            borderColor: "divider",
-            transition: "color 0.3s",
-            color: "text.secondary",
-            "&:hover": {
-              color: "text.primary",
+            borderColor: 'divider',
+            transition: 'color 0.3s',
+            color: 'text.secondary',
+            '&:hover': {
+              color: 'text.primary',
             },
           }}
         >
