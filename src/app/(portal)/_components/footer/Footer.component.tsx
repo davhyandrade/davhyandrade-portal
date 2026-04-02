@@ -1,5 +1,4 @@
 import { IconButton, Link, Stack, Typography } from '@mui/material';
-
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -38,20 +37,28 @@ function Footer() {
         </Stack>
 
         <Typography variant="caption" color="text.secondary" textAlign="center">
-          Meu Portfólio &copy; {new Date().getFullYear()} - 2022. Todos os
+          Meu Portfólio &copy; 2022 - {new Date().getFullYear()}. Todos os
           direitos reservados.
         </Typography>
 
         <Stack direction="row" spacing={2} justifyContent="center">
-          <IconButton href={LINKEDIN_PROFILE_URL} color="info">
+          <IconButton
+            href={LINKEDIN_PROFILE_URL}
+            color="info"
+            data-testid="linkedin-button"
+          >
             <LinkedInIcon fontSize="small" />
           </IconButton>
 
-          <IconButton href={GITHUB_PROFILE_URL} color="info">
+          <IconButton
+            href={GITHUB_PROFILE_URL}
+            color="info"
+            data-testid="github-button"
+          >
             <GitHubIcon fontSize="small" />
           </IconButton>
 
-          <IconButton href={EMAIL_URL} color="info">
+          <IconButton href={EMAIL_URL} color="info" data-testid="email-button">
             <EmailIcon fontSize="small" />
           </IconButton>
         </Stack>
