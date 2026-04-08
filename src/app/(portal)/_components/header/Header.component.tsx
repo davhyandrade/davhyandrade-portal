@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-
 import { AppBar, Container, Stack, Typography } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 

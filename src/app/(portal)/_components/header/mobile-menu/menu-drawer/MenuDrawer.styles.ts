@@ -1,5 +1,6 @@
-import Link from '@/shared/lib/mui/components/link';
 import { alpha, styled } from '@mui/material/styles';
+
+import Link from '@/shared/lib/mui/components/link';
 
 export const StyledLink = styled(Link)(({ theme }) => ({
   textAlign: 'center',

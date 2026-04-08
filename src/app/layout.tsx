@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Cookie, Open_Sans } from 'next/font/google';
+
 import './globals.css';
 import Providers from './providers';
 

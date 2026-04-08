@@ -1,5 +1,4 @@
 import Link from 'next/link';
-
 import { Menu, MenuItem } from '@mui/material';
 
 import type { DropdownProps } from './Dropdown.types';
