@@ -1,7 +1,7 @@
-import { IconButton, Link, Stack, Typography } from '@mui/material';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { IconButton, Link, Stack, Typography } from '@mui/material';
 
 import {
   EMAIL_URL,

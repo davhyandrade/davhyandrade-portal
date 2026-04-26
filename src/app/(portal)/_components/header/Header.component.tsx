@@ -1,8 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import { AppBar, Container, Stack, Typography } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Image from 'next/image';
 
 import MenuMobile from './mobile-menu/MobileMenu.component';
 import NavbarMenu from './navbar-menu/NavbarMenu.component';

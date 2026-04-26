@@ -1,3 +1,6 @@
+import type { MenuItemWithDropdownProps } from './MenuItemWithDropdown.types';
+
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
   Accordion,
   AccordionDetails,
@@ -5,11 +8,8 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import Link from '@/shared/lib/mui/components/link';
-
-import type { MenuItemWithDropdownProps } from './MenuItemWithDropdown.types';
 
 function MenuItemWithDropdown({ item, onClose }: MenuItemWithDropdownProps) {
   return (
