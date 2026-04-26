@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { Menu, MenuItem } from '@mui/material';
-
 import type { DropdownProps } from './Dropdown.types';
+
+import { Menu, MenuItem } from '@mui/material';
+import Link from 'next/link';
 
 function Dropdown({ anchorEl, isOpen, onClose, items }: DropdownProps) {
   return (

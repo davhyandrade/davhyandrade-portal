@@ -1,3 +1,5 @@
+import type { MenuDrawerProps } from './MenuDrawer.types';
+
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { Drawer, IconButton, Stack } from '@mui/material';
 
@@ -5,7 +7,6 @@ import { menuItems } from '@/app/(portal)/_components/header/Header.config';
 
 import MenuItemWithDropdown from './menu-item-with-dropdown/MenuItemWithDropdown.component';
 import { StyledLink } from './MenuDrawer.styles';
-import type { MenuDrawerProps } from './MenuDrawer.types';
 
 function MenuDrawer({ open, onClose }: MenuDrawerProps) {
   return (
