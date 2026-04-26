@@ -1,26 +1,19 @@
-## Context Usage Rules
+---
+ler_quando: sempre
+descricao: Ponto de partida para agentes de IA. Leia isto primeiro, SEMPRE.
+---
 
-- Always read and consider all context files listed below before generating a response:
-  - `ai/contexts/project-overview.md`
-  - `ai/contexts/conventions.md`
-  - `ai/contexts/test-conventions.md`
-  - `ai/agents/frontend-expert.md`
+## Estrutura de Diretórios
 
-- The context in these files is mandatory and must be followed strictly.
+- `ai/agents/` — identidades de agentes e orquestração.
+- `ai/rules/` — diretrizes, convenções e regras arquiteturais do projeto.
+- `ai/skills/` — habilidades específicas e fluxos de trabalho (workflows) executáveis pelos agentes.
 
-- If there is a conflict:
-  1. `test-conventions.md` has the highest priority for anything related to tests
-  2. `conventions.md` applies to general code standards
-  3. `project-overview.md` defines architecture and structure
-  4. `frontend-expert.md` defines best practices and opinions
+## Sequência de Inicialização
 
-- Do not ignore any context file when its domain is relevant to the request.
+Leia e inicie `ai/agents/maestro.md` imediatamente.
 
-- All generated code and responses must comply with the defined conventions.
+## Regras Globais
 
-- After generating a response, validate internally that the output:
-  - follows all relevant conventions
-  - respects the rules defined in the context files
-  - does not violate any project standards
-
-- If any violation is detected, correct the response before finalizing it.
+- O sistema de IA opera em um modelo de **Multi-Persona**.
+- O contexto nos diretórios acima é mandatório e deve ser seguido rigorosamente.
