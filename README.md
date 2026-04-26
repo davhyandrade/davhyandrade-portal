@@ -2,9 +2,12 @@
 
 Este é o repositório do meu portal pessoal, onde apresento meus projetos, trabalhos de design digital e fotografias. Sou um desenvolvedor web especializado na criação de aplicações com React e Next.js.
 
-## Começando
+> [!IMPORTANT]
+> Utilizo este projeto como um laboratório pessoal, onde posso testar e explorar ferramentas, patterns, bibliotecas e qualquer outra vertente que contribua para o meu desenvolvimento. Tento manter total liberdade para eu seguir diferentes caminhos com fins de estudo, sejam eles bons, adequados, experimentais ou não.
 
-Para executar este projeto localmente, siga os passos abaixo:
+## Executar Projeto
+
+Para iniciar este projeto localmente, siga os passos abaixo:
 
 1. **Clone o repositório:**
 
