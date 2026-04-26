@@ -1,12 +1,12 @@
-import { Divider, Stack } from '@mui/material';
+import type { MenuItem } from './Header.types';
+
 import PhoneInTalkRoundedIcon from '@mui/icons-material/PhoneInTalkRounded';
+import { Divider, Stack } from '@mui/material';
 
 import {
   GALLERY_URL,
   LINKEDIN_PROFILE_URL,
 } from '@/shared/constants/links.constants';
-
-import type { MenuItem } from './Header.types';
 
 export const menuItems: MenuItem[] = [
   { label: 'Projetos', href: '/#projects' },

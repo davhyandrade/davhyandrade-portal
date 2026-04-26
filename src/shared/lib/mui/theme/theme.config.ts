@@ -1,11 +1,11 @@
 import { createTheme } from '@mui/material/styles';
 
 import breakpoints from './breakpoints/breakpoints.config';
-import typography from './typography/typography.config';
-import palette from './palette/palette.config';
+import { MuiButton } from './components/button/button.config';
 import { MuiLink } from './components/link/link.config';
 import { MuiTypography } from './components/typography/typography.config';
-import { MuiButton } from './components/button/button.config';
+import palette from './palette/palette.config';
+import typography from './typography/typography.config';
 
 const theme = createTheme({
   cssVariables: true,

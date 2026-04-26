@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import { IconButton } from '@mui/material';
+import { useState } from 'react';
 
 import MenuDrawer from './menu-drawer/MenuDrawer.component';
 
